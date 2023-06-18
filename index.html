@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="script.js" defer></script>
+
+    <title>
+      Frontend Mentor | Newsletter sign-up form with success message
+    </title>
+  </head>
+  <body>
+    <form id="container-card">
+      <div id="image-container-mobile">
+        <img
+          src="./assets/images/illustration-sign-up-desktop.svg"
+          alt="illustration-sign-up-desktop"
+        />
+      </div>
+      <div id="form-container">
+        <div id="header">
+          <h2 class="header">Stay Updated</h2>
+          <p class="description">
+            Join 60,000+ product managers receiving monthly updates on:
+          </p>
+        </div>
+        <ul class="ticks">
+          <li>
+            <img src="./assets/images/icon-list.svg" alt="Red Check Mark" />
+            Product discovery and building what matters
+          </li>
+          <li>
+            <img
+              src="./assets/images/icon-list.svg"
+              alt="Red Check Mark"
+            />Measuring to ensure updates are a success
+          </li>
+          <li>
+            <img src="./assets/images/icon-list.svg" alt="Red Check Mark" />And
+            much more!
+          </li>
+        </ul>
+        <label for="emailInput" class="emailInput"
+          ><p>Email address <span class="hidden">Valid Email Required</span></p>
+          <input
+            type="email"
+            name="emailInput"
+            id="emailInput"
+            placeholder="email@company.com"
+        /></label>
+        <button class="submit-button" type="submit">
+          Subscribe to monthly newsletter
+        </button>
+      </div>
+      <div id="image-container">
+        <img
+          src="./assets/images/illustration-sign-up-desktop.svg"
+          alt="illustration-sign-up-desktop"
+        />
+      </div>
+    </form>
+    <div id="success-card">
+      <img src="assets/images/icon-success.svg" alt="Sucess icon" />
+      <h2>Thanks for subscribing!</h2>
+      <p>
+        A confirmaiton email has been sent to
+        <span class="bold-email">example@gmail.com</span>. Please open it and
+        click the button inside to confirm your subscription.
+      </p>
+      <button class="dismiss-message">Dismiss message</button>
+    </div>
+  </body>
+</html>
